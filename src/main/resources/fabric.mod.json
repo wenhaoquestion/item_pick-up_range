@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "item_pick-up_range",
+  "version": "${version}",
+  "name": "item_pick-up_range",
+  "description": "This is a mod that can change the item pick-up range",
+  "authors": [
+    "wenhao"
+  ],
+  "contact": {
+    "repo": "https://github.com/question/item_pick-up_range"
+  },
+  "license": "MIT",
+  "icon": "assets/item_pick-up_range/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.wenhao.itempickuprange.client.Item_pick_up_rangeClient"
+    ],
+    "main": [
+      "com.wenhao.itempickuprange.ItemPickUpRangeMod"
+    ]
+  },
+  "mixins": [
+    "item_pick-up_range.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
